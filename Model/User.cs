@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Model
 {
-	public class PublicUser
+	public class User
 	{
 		[Key]
 		public int Id { get; set; }
@@ -16,5 +16,11 @@ namespace Model
 		public string Name { get; set; }
 
 		public string Surname { get; set; }
+		
+		public string Password { get; set; }
+		
+		public string Email { get; set; }
+		
+		public string Role { get; set; }
 	}
 }

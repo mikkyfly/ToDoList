@@ -1,4 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Security.Claims;
+using System.Threading.Tasks;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 using Model;
 
@@ -6,7 +10,7 @@ namespace Server.Model
 {
 	public class ApplicationContext : DbContext
 	{
-		public DbSet<PublicUser> PublicUsers { get; set; }
+		public DbSet<User> Users { get; set; }
 
 		public DbSet<Order> Orders { get; set; }
 
@@ -21,7 +25,7 @@ namespace Server.Model
 		{
 			base.OnModelCreating(modelBuilder);
 
-			modelBuilder.Entity<PublicUser>()
+			modelBuilder.Entity<User>()
 				.HasAlternateKey("Login");
 
 			modelBuilder.Entity<Order>().HasOne(o => o.Customer);

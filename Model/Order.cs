@@ -30,10 +30,10 @@ namespace Model
 		[Key]
 		public int Id { get; set; }
 
-		public PublicUser Customer { get; set; }
+		public User Customer { get; set; }
 
 		//public ICollection<PublicUser> Executors { get; set; }
-		public List<PublicUser> Executors { get; set; }
+		public List<User> Executors { get; set; }
 
 		//public DateTime StartDate { get; set; }
 
