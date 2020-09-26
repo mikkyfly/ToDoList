@@ -1,9 +1,10 @@
-﻿using System.Security.Claims;
+﻿using System;
+using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Model;
 
 namespace Server.Model
@@ -29,8 +30,22 @@ namespace Server.Model
 				.HasAlternateKey("Login");
 
 			modelBuilder.Entity<Order>().HasOne(o => o.Customer);
+			
+			var converter = new ValueConverter<int[], string>(
+				v => string.Join(";", v),
+				v => v
+					.Split(";", StringSplitOptions.RemoveEmptyEntries)
+					.Select(int.Parse).ToArray());
 
-			modelBuilder.Entity<Order>().HasMany(o => o.Executors);
+			var comparer = new ValueComparer<int[]>((c1, c2) => c1.ToHashSet().SetEquals(c2.ToHashSet()), 
+					c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
+					c => c.ToArray());
+			
+			modelBuilder.Entity<Order>()
+				.Property(o => o.ExecutorIds)
+				.HasConversion(converter)
+				.Metadata
+				.SetValueComparer(comparer);
 		}
 	}
 }

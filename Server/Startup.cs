@@ -60,7 +60,7 @@ namespace Server
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseDefaultFiles();
+            // app.UseDefaultFiles();
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -77,10 +77,10 @@ namespace Server
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapDefaultControllerRoute();
-                // endpoints.MapControllerRoute(
-                // 	name: "default",
-                // 	pattern: "{controller=Home}/{action=Index}/{id?}");
+                // endpoints.MapDefaultControllerRoute();
+                endpoints.MapControllerRoute(
+                	name: "default",
+                	pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

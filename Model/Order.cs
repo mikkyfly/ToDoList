@@ -31,9 +31,11 @@ namespace Model
 		public int Id { get; set; }
 
 		public User Customer { get; set; }
-
-		//public ICollection<PublicUser> Executors { get; set; }
-		public List<User> Executors { get; set; }
+		
+		public int[] ExecutorIds { get; set; }
+		
+		// public virtual ICollection<User> Executors { get; set; }
+		//public List<User> Executors { get; set; }
 
 		//public DateTime StartDate { get; set; }
 
