@@ -10,37 +10,17 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|iPhone = Debug|iPhone
-		Debug|iPhoneSimulator = Debug|iPhoneSimulator
 		Release|Any CPU = Release|Any CPU
-		Release|iPhone = Release|iPhone
-		Release|iPhoneSimulator = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Release|iPhone.Build.0 = Release|Any CPU
-		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{DAE74C88-CC17-4EDE-A253-929F3CF6736A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Release|iPhone.Build.0 = Release|Any CPU
-		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{C620EA8E-39D3-4B55-AF68-5505D17D7522}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
